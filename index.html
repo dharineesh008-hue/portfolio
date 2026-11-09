@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Portfolio of Dharineesh, a Computer Science undergraduate focusing on Data Analytics.">
+  <title>Dharineesh | Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='30' font-weight='700' fill='%23ccff00'%3ED%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    /* Enables the scroll-reveal animation only when it will actually run. */
+    if ("IntersectionObserver" in window && !(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) {
+      document.documentElement.classList.add("js");
+    }
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!--
+  HOW TO EDIT THIS PAGE
+  - Text inside <span class="is-placeholder">[ ... ]</span> is a PLACEHOLDER. Replace the text
+    (including the square brackets) and delete  class="is-placeholder"  so the highlight goes away.
+  - To activate a disabled link, replace the whole <span class="link is-disabled" ...> ... </span>
+    with <a class="link" href="https://your-link" target="_blank" rel="noopener noreferrer"> ... </a>
+    (keep the text/icon that was inside it).
+  - Your email address is set in script.js (one line at the top).
+-->
+
+<!-- Icon library (hidden). Icons are used further down with <use href="#i-...">. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M19 12l-7 7-7-7"/></symbol>
+  <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-graduation" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5M22 10v6"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></symbol>
+  <symbol id="i-terminal" viewBox="0 0 24 24"><path d="M4 17l6-6-6-6M12 19h8"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14M22 4L12 14.01l-3-3"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="Dharineesh – back to top">
+      <span class="brand-mark" aria-hidden="true">DH</span>
+      <span class="brand-name">Dharineesh</span>
+    </a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Open menu</span>
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" aria-current="true">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== HOME / HERO ===================== -->
+<section id="home" class="hero" aria-labelledby="hero-title">
+  <div class="hero-glow hero-glow--lime" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow--grey" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="pill" data-reveal><span class="pulse-dot" aria-hidden="true"></span><span class="is-placeholder">[Add availability status, e.g. open to internships]</span></p>
+      <p class="eyebrow" data-reveal><span class="eyebrow-dot" aria-hidden="true"></span>Portfolio • Data Analytics</p>
+      <h1 id="hero-title" data-reveal>Dharineesh</h1>
+      <p class="hero-role" data-reveal>Computer Science Undergraduate <span class="accent-bullet" aria-hidden="true">•</span> Data Analytics</p>
+      <p class="hero-intro" data-reveal><span class="is-placeholder">[Add a one- or two-sentence introduction about yourself]</span></p>
+      <div class="hero-cta" data-reveal>
+        <a class="btn btn--primary" href="#projects">View My Projects <svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-arrow-down"/></svg></a>
+        <a class="btn btn--outline" href="#contact">Contact Me <svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></a>
+      </div>
+      <ul class="chip-row" aria-label="Highlights" data-reveal>
+        <li class="chip">Computer Science</li>
+        <li class="chip">Data Analytics focus</li>
+      </ul>
+    </div>
+
+    <figure class="hero-visual" data-reveal>
+      <div class="window-bar" aria-hidden="true">
+        <span class="window-dots"><i></i><i></i><i></i></span>
+        <span class="window-label">dh.portfolio</span>
+      </div>
+      <div class="hero-media">
+        <!-- Placeholder artwork. To use your own picture, replace this whole <svg> with: <img src="your-image.jpg" alt="Describe the image" width="800" height="600"> (upload the image to the same folder). -->
+        <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <defs>
+            <radialGradient id="hg" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#1f2a05"/><stop offset="1" stop-color="#050505"/></radialGradient>
+            <radialGradient id="hglow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ccff00" stop-opacity=".55"/><stop offset="1" stop-color="#ccff00" stop-opacity="0"/></radialGradient>
+          </defs>
+          <rect width="800" height="600" fill="url(#hg)"/>
+          <circle cx="400" cy="290" r="230" fill="url(#hglow)"/>
+          <g stroke="#ffffff" stroke-opacity=".08"><path d="M0 150H800M0 300H800M0 450H800M160 0V600M320 0V600M480 0V600M640 0V600"/></g>
+          <g stroke="#a3e635" stroke-opacity=".45" stroke-width="1.5" fill="none">
+            <path d="M120 430 L260 300 L400 360 L540 220 L690 300"/><path d="M200 160 L260 300 L330 470"/>
+            <path d="M400 360 L330 470 L520 480 L540 220"/><path d="M400 110 L540 220 M400 110 L260 300 M690 300 L640 460 L520 480"/>
+          </g>
+          <g fill="#ccff00">
+            <circle cx="120" cy="430" r="6"/><circle cx="260" cy="300" r="9"/><circle cx="400" cy="360" r="11"/><circle cx="540" cy="220" r="9"/>
+            <circle cx="690" cy="300" r="6"/><circle cx="200" cy="160" r="5"/><circle cx="330" cy="470" r="7"/><circle cx="520" cy="480" r="6"/>
+            <circle cx="400" cy="110" r="6"/><circle cx="640" cy="460" r="5"/>
+          </g>
+        </svg>
+        <div class="hero-badges">
+          <span class="badge badge--light"><svg class="icon" width="13" height="13" aria-hidden="true" focusable="false"><use href="#i-code"/></svg> Computer Science</span>
+          <span class="badge badge--dark"><svg class="icon" width="13" height="13" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg> Data Analytics focus</span>
+        </div>
+      </div>
+      <figcaption class="status-bar" aria-hidden="true">
+        <span><i class="status-dot"></i> PORTFOLIO::ONLINE</span>
+        <span>NODE::DHARINEESH</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section section--alt" aria-labelledby="about-title">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <div class="section-header-text">
+        <p class="eyebrow-tag"><span>01 / Profile</span><span class="eyebrow-line" aria-hidden="true"></span></p>
+        <h2 id="about-title">About Me</h2>
+        <p class="section-subtitle"><span class="is-placeholder">[Add a one-line summary of what drives you]</span></p>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="card about-main" data-reveal>
+        <div class="about-text">
+          <p class="about-lead">I am an undergraduate Computer Science student with a focus on Data Analytics.</p>
+          <p><span class="is-placeholder">[Add a short paragraph about your background, interests, and what you are looking for]</span></p>
+        </div>
+        <div class="about-notes">
+          <div class="note">
+            <h3><svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-book"/></svg> Research &amp; Interests</h3>
+            <p><span class="is-placeholder">[Add your interests / research focus]</span></p>
+          </div>
+          <div class="note">
+            <h3><svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-briefcase"/></svg> Target Industries</h3>
+            <p><span class="is-placeholder">[Add the industries or domains you are interested in]</span></p>
+          </div>
+        </div>
+      </div>
+
+      <ul class="about-stats">
+        <li class="card card--hover stat" data-reveal>
+          <span class="icon-tile"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg></span>
+          <div><p class="mono-label">Specialization</p><h3>Data Analytics</h3><p class="stat-note"><span class="is-placeholder">[Add a short note]</span></p></div>
+        </li>
+        <li class="card card--hover stat" data-reveal>
+          <span class="icon-tile icon-tile--lime"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-graduation"/></svg></span>
+          <div><p class="mono-label">Current status</p><h3>Undergraduate</h3><p class="stat-note">Computer Science</p></div>
+        </li>
+        <li class="card card--hover stat" data-reveal>
+          <span class="icon-tile"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-share"/></svg></span>
+          <div><p class="mono-label">Core focus areas</p><h3><span class="is-placeholder">[Add focus area]</span></h3><p class="stat-note"><span class="is-placeholder">[Add a short note]</span></p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="section" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <div class="section-header-text">
+        <p class="eyebrow-tag"><span>02 / Capabilities</span><span class="eyebrow-line" aria-hidden="true"></span></p>
+        <h2 id="skills-title">Technical Skills</h2>
+        <p class="section-subtitle"><span class="is-placeholder">[Add a one-line summary of your skill set]</span></p>
+      </div>
+    </div>
+
+    <!-- Rename a category, or copy/paste a whole <li> to add one. Add skills as <li class="tag">Python</li>. -->
+    <ul class="skills-grid">
+      <li class="card card--hover skill-card" data-reveal>
+        <div class="skill-top"><span class="icon-tile"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-code"/></svg></span><span class="mono-label" aria-hidden="true">01</span></div>
+        <h3>Programming</h3>
+        <p class="card-desc"><span class="is-placeholder">[Add a short description]</span></p>
+        <ul class="tag-list" aria-label="Programming skills"><li class="tag"><span class="is-placeholder">[Add skill]</span></li><li class="tag"><span class="is-placeholder">[Add skill]</span></li></ul>
+      </li>
+      <li class="card card--hover skill-card" data-reveal>
+        <div class="skill-top"><span class="icon-tile icon-tile--lime"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg></span><span class="mono-label" aria-hidden="true">02</span></div>
+        <h3>Data Analytics</h3>
+        <p class="card-desc"><span class="is-placeholder">[Add a short description]</span></p>
+        <ul class="tag-list" aria-label="Data Analytics skills"><li class="tag"><span class="is-placeholder">[Add skill]</span></li><li class="tag"><span class="is-placeholder">[Add skill]</span></li></ul>
+      </li>
+      <li class="card card--hover skill-card" data-reveal>
+        <div class="skill-top"><span class="icon-tile"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-database"/></svg></span><span class="mono-label" aria-hidden="true">03</span></div>
+        <h3>Databases</h3>
+        <p class="card-desc"><span class="is-placeholder">[Add a short description]</span></p>
+        <ul class="tag-list" aria-label="Databases skills"><li class="tag"><span class="is-placeholder">[Add skill]</span></li><li class="tag"><span class="is-placeholder">[Add skill]</span></li></ul>
+      </li>
+      <li class="card card--hover skill-card" data-reveal>
+        <div class="skill-top"><span class="icon-tile icon-tile--lime"><svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-terminal"/></svg></span><span class="mono-label" aria-hidden="true">04</span></div>
+        <h3>Tools</h3>
+        <p class="card-desc"><span class="is-placeholder">[Add a short description]</span></p>
+        <ul class="tag-list" aria-label="Tools skills"><li class="tag"><span class="is-placeholder">[Add skill]</span></li><li class="tag"><span class="is-placeholder">[Add skill]</span></li></ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="section section--alt" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <div class="section-header-text">
+        <p class="eyebrow-tag"><span>03 / Works</span><span class="eyebrow-line" aria-hidden="true"></span></p>
+        <h2 id="projects-title">Featured Projects</h2>
+        <p class="section-subtitle"><span class="is-placeholder">[Add a one-line summary of your projects]</span></p>
+      </div>
+      <span class="link link--strong is-disabled" aria-disabled="true" title="Add your GitHub repositories link in index.html">Explore All Repositories <svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg></span>
+    </div>
+
+    <ul class="projects-grid">
+      <!-- PROJECT 1 (copy a whole <li> to add more projects) -->
+      <li class="card card--hover project-card" data-reveal>
+        <div class="project-visual project-visual--line" aria-hidden="true"><span class="badge badge--dark badge--mono"><span class="is-placeholder">[Project type]</span></span><span class="project-art"></span></div>
+        <div class="project-body">
+          <h3><span class="is-placeholder">[Add project title]</span></h3>
+          <dl class="project-facts">
+            <div><dt class="fact-label fact-label--dark">Problem</dt><dd><span class="is-placeholder">[Add project details: what problem does it address?]</span></dd></div>
+            <div><dt class="fact-label fact-label--lime">Solution</dt><dd><span class="is-placeholder">[Add project details: what did you build or find?]</span></dd></div>
+          </dl>
+          <ul class="tag-list" aria-label="Technologies used"><li class="tag"><span class="is-placeholder">[Add tech]</span></li><li class="tag"><span class="is-placeholder">[Add tech]</span></li></ul>
+          <div class="project-links">
+            <span class="link is-disabled" aria-disabled="true" title="Add this link in index.html"><svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-github"/></svg> GitHub Repo</span>
+            <span class="link link--button is-disabled" aria-disabled="true" title="Add this link in index.html">Live Demo <svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg></span>
+          </div>
+        </div>
+      </li>
+      <!-- PROJECT 2 -->
+      <li class="card card--hover project-card" data-reveal>
+        <div class="project-visual project-visual--bars" aria-hidden="true"><span class="badge badge--dark badge--mono"><span class="is-placeholder">[Project type]</span></span><span class="project-art"></span></div>
+        <div class="project-body">
+          <h3><span class="is-placeholder">[Add project title]</span></h3>
+          <dl class="project-facts">
+            <div><dt class="fact-label fact-label--dark">Problem</dt><dd><span class="is-placeholder">[Add project details: what problem does it address?]</span></dd></div>
+            <div><dt class="fact-label fact-label--lime">Solution</dt><dd><span class="is-placeholder">[Add project details: what did you build or find?]</span></dd></div>
+          </dl>
+          <ul class="tag-list" aria-label="Technologies used"><li class="tag"><span class="is-placeholder">[Add tech]</span></li><li class="tag"><span class="is-placeholder">[Add tech]</span></li></ul>
+          <div class="project-links">
+            <span class="link is-disabled" aria-disabled="true" title="Add this link in index.html"><svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-github"/></svg> GitHub Repo</span>
+            <span class="link link--button is-disabled" aria-disabled="true" title="Add this link in index.html">Live Demo <svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg></span>
+          </div>
+        </div>
+      </li>
+      <!-- PROJECT 3 -->
+      <li class="card card--hover project-card" data-reveal>
+        <div class="project-visual project-visual--grid" aria-hidden="true"><span class="badge badge--dark badge--mono"><span class="is-placeholder">[Project type]</span></span><span class="project-art"></span></div>
+        <div class="project-body">
+          <h3><span class="is-placeholder">[Add project title]</span></h3>
+          <dl class="project-facts">
+            <div><dt class="fact-label fact-label--dark">Problem</dt><dd><span class="is-placeholder">[Add project details: what problem does it address?]</span></dd></div>
+            <div><dt class="fact-label fact-label--lime">Solution</dt><dd><span class="is-placeholder">[Add project details: what did you build or find?]</span></dd></div>
+          </dl>
+          <ul class="tag-list" aria-label="Technologies used"><li class="tag"><span class="is-placeholder">[Add tech]</span></li><li class="tag"><span class="is-placeholder">[Add tech]</span></li></ul>
+          <div class="project-links">
+            <span class="link is-disabled" aria-disabled="true" title="Add this link in index.html"><svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-github"/></svg> GitHub Repo</span>
+            <span class="link link--button is-disabled" aria-disabled="true" title="Add this link in index.html">Live Demo <svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg></span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION ===================== -->
+<section id="education" class="section" aria-labelledby="education-title">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <div class="section-header-text">
+        <p class="eyebrow-tag"><span>04 / Background</span><span class="eyebrow-line" aria-hidden="true"></span></p>
+        <h2 id="education-title">Education</h2>
+        <p class="section-subtitle">Academic foundation and coursework.</p>
+      </div>
+    </div>
+
+    <article class="card edu-card" data-reveal>
+      <div class="edu-head">
+        <span class="icon-tile icon-tile--lg"><svg class="icon" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-graduation"/></svg></span>
+        <div class="edu-title">
+          <p class="mono-label">Undergraduate degree</p>
+          <h3>Computer Science</h3>
+          <p class="edu-spec"><span class="accent-dot" aria-hidden="true"></span> Focus on Data Analytics</p>
+          <p class="edu-where">
+            <span><svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-graduation"/></svg> <span class="is-placeholder">[Your college / university name]</span></span>
+            <span><svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg> <span class="is-placeholder">[City, State / Country]</span></span>
+          </p>
+        </div>
+        <div class="edu-meta">
+          <span class="badge badge--lime"><svg class="icon" width="13" height="13" aria-hidden="true" focusable="false"><use href="#i-calendar"/></svg> <span class="is-placeholder">[Expected graduation year]</span></span>
+          <p class="edu-honors"><span class="is-placeholder">[Optional: GPA / academic honors]</span></p>
+        </div>
+      </div>
+      <div class="edu-courses">
+        <h4 class="mono-label"><svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-book"/></svg> Relevant Academic Coursework</h4>
+        <ul class="tag-list tag-list--lg">
+          <li class="tag"><span class="is-placeholder">[Add course]</span></li>
+          <li class="tag"><span class="is-placeholder">[Add course]</span></li>
+          <li class="tag"><span class="is-placeholder">[Add course]</span></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section section--alt section--last" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <div class="section-header-text">
+        <p class="eyebrow-tag"><span>05 / Get in touch</span><span class="eyebrow-line" aria-hidden="true"></span></p>
+        <h2 id="contact-title">Let&rsquo;s Connect</h2>
+        <p class="section-subtitle">Have an opportunity, a collaboration idea, or a question about data analytics? I&rsquo;d love to hear from you.</p>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <ul class="channels" aria-label="Contact channels" data-reveal>
+        <!-- Email card: becomes a real link automatically once CONTACT_EMAIL is set in script.js -->
+        <li>
+          <div id="email-card" class="card channel is-disabled" aria-disabled="true" title="Add your email in script.js">
+            <span class="icon-tile"><svg class="icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
+            <span class="channel-text"><span class="mono-label">Email address</span><strong><span class="is-placeholder" data-email-text>[your.email@example.com]</span></strong></span>
+            <svg class="icon channel-arrow" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+          </div>
+        </li>
+        <!-- LinkedIn: to activate, replace this <div> ... </div> with <a class="card card--hover channel" href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener noreferrer"> ... </a> -->
+        <li>
+          <div class="card channel is-disabled" aria-disabled="true" title="Add your LinkedIn link in index.html">
+            <span class="icon-tile"><svg class="icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></span>
+            <span class="channel-text"><span class="mono-label">LinkedIn</span><strong><span class="is-placeholder">[Add your LinkedIn address]</span></strong></span>
+            <svg class="icon channel-arrow" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+          </div>
+        </li>
+        <!-- GitHub: same idea, use href="https://github.com/YOUR-HANDLE" -->
+        <li>
+          <div class="card channel is-disabled" aria-disabled="true" title="Add your GitHub link in index.html">
+            <span class="icon-tile"><svg class="icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-github"/></svg></span>
+            <span class="channel-text"><span class="mono-label">GitHub</span><strong><span class="is-placeholder">[Add your GitHub address]</span></strong></span>
+            <svg class="icon channel-arrow" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+          </div>
+        </li>
+      </ul>
+
+      <form id="contact-form" class="card contact-form" data-reveal>
+        <h3>Send a Message</h3>
+        <div class="form-row">
+          <div class="field"><label for="cf-name">Your Name</label><input id="cf-name" name="name" type="text" autocomplete="name" placeholder="e.g., Alex Mercer" required></div>
+          <div class="field"><label for="cf-email">Email Address</label><input id="cf-email" name="email" type="email" autocomplete="email" placeholder="alex@company.com" required></div>
+        </div>
+        <div class="field"><label for="cf-subject">Subject</label><input id="cf-subject" name="subject" type="text" placeholder="Opportunity / project discussion"></div>
+        <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your team, the problem you're tackling, or dates for a conversation…" required></textarea></div>
+        <div class="form-foot">
+          <p class="form-note"><svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Opens your email app. Nothing is stored.</p>
+          <button class="btn btn--primary" type="submit">Send Message <svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-send"/></svg></button>
+        </div>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-copy">&copy; <span id="year">2026</span> Dharineesh.</p>
+    <nav aria-label="Footer">
+      <ul class="footer-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <ul class="footer-social" aria-label="Social links">
+      <!-- To activate: replace the <span ...> ... </span> with <a class="link" href="https://github.com/YOUR-HANDLE" target="_blank" rel="noopener noreferrer"> ... </a> -->
+      <li><span class="link is-disabled" aria-disabled="true"><svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-github"/></svg> GitHub</span></li>
+      <li><span class="link is-disabled" aria-disabled="true"><svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg> LinkedIn</span></li>
+      <li><span id="footer-email" class="link is-disabled" aria-disabled="true"><svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg> Email</span></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
